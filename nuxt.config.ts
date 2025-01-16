@@ -6,6 +6,10 @@ export default defineNuxtConfig({
     '@nuxt/ui',
     '@vite-pwa/nuxt',
   ],
+  css: [
+    'animate.css',
+    '@/assets/styles/global.css',
+  ],
   pwa: { 
     manifest: { 
       name: 'MinaTillskott' } },
