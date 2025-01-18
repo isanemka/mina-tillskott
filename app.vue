@@ -1,5 +1,8 @@
 <template>
-  <NContainer class="min-h-screen flex flex-col font-bebas-neue"> 
+  <NContainer class="min-h-screen flex flex-col font-bebas-neue">
+    <head>
+      <link rel="manifest" href="/manifest.webmanifest">
+    </head>
     <header class="bg-primary text-white p-4 flex items-center justify-between">
       <div class="flex items-center space-x-4">
         <img src="/assets/logo.png" alt="logo" class="w-20 h-16" />

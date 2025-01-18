@@ -28,3 +28,8 @@ Thumbs.db
 # ESLint cache files
 .eslintcache
 .prettiercache
+
+# PWA Files
+sw.*
+workbox-*.js
+workbox-*.js.map
