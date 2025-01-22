@@ -18,7 +18,14 @@ export default defineNuxtConfig({
   modules: [
     '@nuxt/ui',
     '@vite-pwa/nuxt',
+    '@nuxtjs/tailwindcss'
   ],
+  runtimeConfig: {
+    public: {
+      SUPABASE_URL: process.env.SUPABASE_URL,
+      SUPABASE_KEY: process.env.SUPABASE_KEY,
+    }
+  },
   css: [
     'animate.css',
     '@/assets/styles/global.css',
@@ -37,6 +44,11 @@ export default defineNuxtConfig({
       start_url: '/',
       icons: [
         {
+          src: '/icon-64x64.png',
+          sizes: '64x64',
+          type: 'image/png',
+        },
+        {
           src: '/icon-192x192.png',
           sizes: '192x192',
           type: 'image/png',
@@ -53,7 +65,7 @@ export default defineNuxtConfig({
       type: 'module',
     },
     workbox: {
-      globPatterns: ['**/*.{js,css,html,png,svg}'],
+      globPatterns: ['**/*.{js,css,html,png}'],
       navigateFallback: '/',
       runtimeCaching: [
     {
