@@ -4,7 +4,9 @@
       <div class="relative flex h-16 items-center justify-between">
         <div class="flex flex-1 items-center justify-center">
           <div class="flex shrink-0 items-center">
-            <img class="h-16 w-auto" src="../assets/logo.png" alt="Mina Tillskott Logo" />
+            <a href="./">
+              <img class="h-16 w-auto" src="../assets/logo.png" alt="Mina Tillskott Logo" />
+            </a>
           </div>
           <div class="absolute inset-y-0 right-0 flex items-center pr-2">
             
