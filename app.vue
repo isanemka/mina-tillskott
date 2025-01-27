@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen flex flex-col font-lato">
+  <div class="min-h-screen flex flex-col font-lato bg-gray-800">
     <Header />
     
     <main class="flex-grow p-6 bg-gray-800">
